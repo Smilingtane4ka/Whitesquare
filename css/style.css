@@ -1,0 +1,330 @@
+body{
+    background: #8f8f8f url("../images/bg.png");
+    border-top: 5px solid  #7e7e7e;
+    color:  #8f8f8f;
+    font-family: Tahoma,sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+input[type="text"] {
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    color: #b2b2b2;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: top;
+}
+.wrapper{
+    margin: auto;
+    width: 960px;
+}
+header {
+    overflow: hidden;
+    margin: 0;
+    padding: 26px 0 22px 0;
+    font-size: 0;
+}
+header a{
+    float: left;
+}
+form[name="search"]{
+    display: table;
+    float: right;
+    width: 200px;
+}
+header input[type="text"]{
+    width: 136px;
+}
+input[type="submit"]{
+    background-color: #29c5e6;
+    border: none;
+    color: #fff;
+    height: 32px;
+    font: 14px Oswald, sans-serif;
+    margin: 0;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    text-transform: uppercase;
+}
+input[type="submit"]::-moz-focus-inner
+{
+    border: 0;
+    padding: 0;
+}
+.top-menu{
+    background-color: #f3f3f3;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+.top-menu a{
+    color: #b2b2b2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.top-menu li{
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    display: inline-block;
+    font: 14px Oswald, sans-serif;
+    letter-spacing: 0.6px;
+    list-style-position: inside;
+    padding: 8px 30px 9px;
+    margin: 0;
+}
+.top-menu .active{
+    background-color: #29c5e6;
+    border-color: #29c5e6;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.heading{
+    background: url(../images/h1-bg.png);
+    margin: 30px 0;
+    line-height: 0;
+
+}
+.heading h1{
+    background: url(../images/bg.png);
+    color: #7e7e7e;
+    display: inline-block;
+    font: 40px/35px Oswald, sans-serif;
+    letter-spacing: 2px;
+    margin: 0 0 0 20px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+aside {
+    float: left;
+    width: 250px;
+}
+section {
+    margin-left: 280px;
+    padding-bottom: 50px;
+}
+.aside-menu{
+    background: #f3f3f3;
+    border: 1px solid #e7e7e7;
+}
+.aside-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.aside-menu a{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.aside-menu li{
+    border-bottom: 1px solid #e7e7e7;
+    font: 14px/14px Oswald, sans-serif;
+    font-weight: 300;
+    list-style-position: inside;
+    list-style-type: square;
+    padding: 12px;
+    text-transform: uppercase;
+}
+.aside-menu li:last-child{
+    border-bottom: none;
+}
+.aside-menu .active{
+    color: #29c5e6;
+}
+aside h2{
+    background-color: #29c5e6;
+    color: #ffffff;
+    font: 14px/14px 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 30px 0 0 0;
+    padding: 12px;
+    text-transform: uppercase;
+}
+aside p{
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    margin-top: 0;
+    padding: 12px 10px;
+}
+section{
+    padding: 0;
+}
+blockquote{
+    background-color: #29c5e6;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    padding: 16px 31px 12px 18px;
+}
+blockquote p{
+    color: #ffffff;
+    font-size: 33px;
+    font-style: italic;
+    letter-spacing: -0.0001em;
+    line-height: 34px;
+    margin: 0;
+    text-transform: uppercase;
+}
+blockquote cite{
+    color: #1d8ea6;
+    display: block;
+    font-size: 20px;
+    font-style: normal;
+    padding-right: 5px;
+    padding-top: 10px;
+    text-align: right;
+}
+section > p {
+    line-height: 18px;
+    margin-bottom: 18px;
+}
+section figure{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+section figure img{
+    border: 1px solid #fff;
+    outline: 1px solid #c9c9c9;
+}
+section figure + figure{
+    margin-left: 28px;
+}
+section h2{
+    background-color: #29c5e6;
+    color: #ffffff;
+    font: 30px/44px 'Oswald', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 30px 0 20px 0;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+.our-team figure:not(:first-child){
+    margin-left: 43px;
+}
+.our-team figure figcaption{
+    color:  #8f8f8f;
+    font: 16px/28px 'Oswald', sans-serif;
+    font-weight: 300;
+}
+.our-team figure span{
+    color:  #29c5e6;
+    display: block;
+    font: 14px/16px 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-bottom: 19px;
+}
+.our-team:last-child{
+    margin-bottom: 33px;
+}
+footer{
+    background-color:  #7e7e7e;
+    font-size: 0px;
+}
+footer div:not(.wrapper){
+    display: inline-block;
+    vertical-align: top;
+
+}
+footer .wrapper{
+    display: table;
+}
+footer h1{
+    border-bottom: 1px solid #919191;
+    color: #ffffff;
+    font: 14px 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 10px 0 0 0;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+}
+footer .twitter h1{
+    margin-bottom: 7px;
+}
+footer .sitemap h1{
+    margin-bottom: 4px;
+}
+footer .social h1{
+    margin-bottom: 11px;
+}
+.twitter{
+    width: 300px;
+    margin-left: 12px;
+
+    margin-right: 20px;
+}
+.twitter time{
+    font-size: 11px;
+    line-height: 11px;
+}
+.twitter a{;
+    color: #b4aeae;
+    font-size: 11px;
+    line-height: 11px;
+}
+.twitter p{
+    color: #dbdbdb;
+    font-size: 11px;
+    margin: 6px 0 14px;
+    padding-right: 23px;
+    text-align: justify;
+    line-height: 14px;
+}
+.sitemap{
+    width: 150px;
+    margin-right: 19px;
+}
+.sitemap div{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 65px;
+    font-size: 12px;
+}
+.sitemap div:first-of-type{
+    margin-right: 19px;
+}
+.sitemap a{
+    color: #dbdbdb;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 29px;
+    text-decoration: none;
+
+}
+.social{
+    width: 130px;
+
+}
+.social ul{
+    margin: 0;
+    padding: 0;
+}
+.social li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.social ul:first-of-type li{
+     padding: 0 10px 7px 0;
+ }
+.social ul:last-of-type li:nth-child(odd) {
+    padding-right: 8px;
+}
+.social ul:last-of-type li:nth-child(even) {
+    padding-right: 7px;
+}
+.footer-logo{
+    text-align: right;
+    width: 329px;
+    margin: 30px 0 0;
+}
+.footer-logo small,
+.footer-logo small a{
+    color: #dbdbdb;
+    font-size: 10px;
+    line-height: 28px;
+}
+
