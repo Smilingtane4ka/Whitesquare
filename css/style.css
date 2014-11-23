@@ -100,7 +100,7 @@ aside {
     float: left;
     width: 250px;
 }
-section {
+.about-main {
     margin-left: 280px;
     padding-bottom: 50px;
 }
@@ -149,14 +149,14 @@ aside p{
 section{
     padding: 0;
 }
-blockquote{
+.about-main blockquote{
     background-color: #29c5e6;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     margin: 0 0 15px 0;
     padding: 16px 31px 12px 18px;
 }
-blockquote p{
+.about-main blockquote p{
     color: #ffffff;
     font-size: 33px;
     font-style: italic;
@@ -190,7 +190,7 @@ section figure img{
 section figure + figure{
     margin-left: 28px;
 }
-section h2{
+.about-main h2{
     background-color: #29c5e6;
     color: #ffffff;
     font: 30px/44px 'Oswald', sans-serif;
@@ -327,4 +327,190 @@ footer .social h1{
     font-size: 10px;
     line-height: 28px;
 }
+.slider-container{
+    font-size: 0;
+    margin-top: 30px;
+}
+.slide{
+    background-image: url(http://placehold.it/960x280);
+    height: 200px;
+    padding: 35px 38px 45px;
+    margin: 0;
 
+}
+.slide h1{
+    color: #5a5a5a;
+    font: 42px/1 'Oswald', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+.slide p{
+    color: #acacac;
+    font: 20px/34px 'Oswald', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+.paginator{
+    background: #f3f3f3;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 12px 12px 13px 12px;
+}
+.paginator ol{
+   counter-reset: list;
+    padding: 0;
+    margin: 0;
+}
+.paginator li{
+    list-style-type: none;
+    display: inline-block;
+    font: 18px/1 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 240px;
+}
+.paginator li:last-child{
+    width: 216px;
+}
+.paginator li:before{
+    background: #8f8f8f;
+    color: #ffffff;
+    counter-increment: list;
+    content: counter(list);
+    display: inline-block;
+    font-size: 16px;
+    height: 20px;
+    margin-right: 12px;
+    padding-top: 4px;
+    text-align: center;
+    width: 24px;
+}
+.paginator li.active{
+    color: #29c5e6;
+}
+.paginator li.active:before{
+    background: #29c5e6;
+}
+section div.heading{
+    margin: 33px 0 16px 0;
+    position: relative;
+}
+.article-team .heading{
+    margin: 33px 0 18px 0;
+}
+section .heading h1{
+    font: 14px/1 'Oswald', sans-serif;
+    letter-spacing: 0.62px;
+    margin: 0 0 0 15px;
+    padding: 0 5px;
+}
+section div.heading:before{
+    position: absolute;
+    background: #29c5e6;
+    content: '';
+    height: 15px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 15px;
+}
+section:last-child .heading{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.articles{
+    padding: 0 10px;
+
+}
+article a{
+    color: #525252;
+    position: relative;
+    text-decoration: none;
+}
+article a:before {
+    border-bottom: 1px solid #a4a4a4;
+    bottom: 0;
+    box-shadow: 0 1px 0 #cecece;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.articles article{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+.articles-two-column article{
+    width: 460px;
+}
+.articles-three-column article{
+    width: 300px;
+}
+.articles-two-column article:first-of-type,
+.articles-three-column article:not(:last-of-type){
+    margin-right: 16px;
+}
+.articles-two-column article:last-of-type blockquote{
+    font-style: italic;
+}
+.articles article blockquote,
+.articles article p{
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 13px;
+    line-height: 16px;
+}
+.articles figure{
+    float: left;
+    margin-right: 20px;
+}
+.article-container{
+    margin-left: 158px;
+}
+.articles p.read-more{
+   margin-bottom: 6px;
+}
+.articles-three-column p.read-more{
+    margin-top: 20px;
+    margin-bottom: 0;
+
+}
+.articles-two-column footer{
+    font-size: 12px;
+    background: none;
+    color: #525252;
+}
+.articles-three-column h2{
+    color: #525252;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.articles-three-column .article-team p{
+    font-size: 11px;
+    line-height: 14px;
+    margin: 2px 0 7px 0;
+}
+.articles-three-column figure{
+    margin: 0 12px 0 0;
+    padding-top: 3px;
+}
+.articles .article-team div:not(.heading){
+    margin-top: 5px;
+}
+.client-logos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 47px;
+}
+.client-logos img{
+    border: 0;
+    outline: 0;
+
+}
