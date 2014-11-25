@@ -91,9 +91,9 @@ input[type="submit"]::-moz-focus-inner
     color: #7e7e7e;
     display: inline-block;
     font: 40px/35px Oswald, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     margin: 0 0 0 20px;
-    padding: 0 10px;
+    padding: 0 6px 0 11px;
     text-transform: uppercase;
 }
 aside {
@@ -102,7 +102,6 @@ aside {
 }
 .about-main {
     margin-left: 280px;
-    padding-bottom: 50px;
 }
 .aside-menu{
     background: #f3f3f3;
@@ -111,6 +110,9 @@ aside {
 .aside-menu ul{
     margin: 0;
     padding: 0;
+}
+.aside-menu .aside-submenu{
+    margin-bottom: -12px;
 }
 .aside-menu a{
     color: #8f8f8f;
@@ -122,14 +124,30 @@ aside {
     font-weight: 300;
     list-style-position: inside;
     list-style-type: square;
-    padding: 12px;
+    padding: 12px 12px 12px 13px;
     text-transform: uppercase;
 }
 .aside-menu li:last-child{
     border-bottom: none;
 }
-.aside-menu .active{
+.aside-menu li.active{
     color: #29c5e6;
+    padding-bottom: 12px;
+}
+.aside-menu .aside-submenu .active{
+    background: #f3f3f3;
+    border-bottom: 1px solid #dfdfdf;
+}
+.aside-menu .aside-submenu li{
+    background: #e7e7e7;
+    border-color: #dfdfdf;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0 -12px;
+    padding: 7px 30px 8px;
+}
+.aside-menu .aside-submenu li:first-child{
+    margin-top: 13px;
 }
 aside h2{
     background-color: #29c5e6;
@@ -144,7 +162,7 @@ aside p{
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
     margin-top: 0;
-    padding: 12px 10px;
+    padding: 12px 10px 7px;
 }
 section{
     padding: 0;
@@ -176,7 +194,7 @@ blockquote cite{
 }
 section > p {
     line-height: 18px;
-    margin-bottom: 18px;
+    margin: 11px 0 18px;
 }
 section figure{
     display: inline-block;
@@ -190,15 +208,25 @@ section figure img{
 section figure + figure{
     margin-left: 28px;
 }
+.content-gallery figcaption{
+    font: 12px 'Oswald', sans-serif;
+    font-weight: 300;
+    padding: 4px 0 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .about-main h2{
     background-color: #29c5e6;
     color: #ffffff;
     font: 30px/44px 'Oswald', sans-serif;
     font-weight: 300;
-    letter-spacing: 1px;
-    margin: 30px 0 20px 0;
+    letter-spacing: 1.2px;
+    margin: 30px 0 0;
     padding-left: 8px;
     text-transform: uppercase;
+}
+.about-main h2:nth-of-type(2){
+    margin-top: 0;
 }
 .our-team figure:not(:first-child){
     margin-left: 43px;
@@ -213,10 +241,12 @@ section figure + figure{
     display: block;
     font: 14px/16px 'Oswald', sans-serif;
     font-weight: 300;
-    margin-bottom: 19px;
+}
+div.our-team{
+    margin-top: 20px;
 }
 .our-team:last-child{
-    margin-bottom: 33px;
+    margin-bottom: 50px;
 }
 footer{
     background-color:  #7e7e7e;
